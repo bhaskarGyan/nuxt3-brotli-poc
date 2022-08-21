@@ -4,5 +4,8 @@ import viteCompression from 'vite-plugin-compression';
 export default defineNuxtConfig({
     vite: {
       plugins: [viteCompression({ algorithm: 'brotliCompress' })]
-    }
+    },
+    router: {
+        base: '/nuxt3-brotli/'
+      }
   });
